@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<!-- this is the head where the link to the css and favicon is written and the title of the website. also the viewport is written-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<title>Morries Motley</title>
+	<link rel="icon" href="image/favicon.png">
+	<script src="js/mobileNav.js"></script>
+</head>
+<!-- start of body-->
+<body>
+
+<div class="page">
+  <header> 
+  <!-- header with logo and message and the logo is a hyperlink-->
+   <nav>
+  <!-- nav bar with sub-nav bar-->
+    <ul class="center">
+      <li class="BiggerHeight"> <a title="Home" href="index.html">Home</a> </li>
+      <li class="dropdown BiggerHeight"> <a title="Products" href="Products.html" class="dropbtn">Products</a>
+        <div class="dropdown-content">
+          <ul class="HeightFix">
+            <li> <a title="Hair Waxes & Clays" href="HairWaxes.html">Hair Waxes & Clays</a> </li>
+            <li> <a title="Hair Tools" href="HairTools.html">Hair Tools</a> </li>
+            <li> <a title="Hair Sprays" href="HairSprays.html">Hair Sprays</a> </li>
+          </ul>
+        </div>
+      </li>
+      <a title="HairStop" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+      <li class="FloatRight BiggerHeight"> <a title="About Us" href="AboutUs.html">About Us</a> </li>
+      <li class="BiggerHeight"> <a title="Contact Us" href="ContactUs.html">Contact Us</a> </li>
+    </ul>
+  </nav>
+  
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="HairWaxes.html" class="indent">Hair Waxes and Clays</a>
+  <a href="HairTools.html" class="leftindent">Hair Tools</a>
+  <a href="HairWaxes.html" class="indent">Hair Waxes and Clays</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="ContactUs.html">Contact Us</a>
+</div>
+ <span class="MobileNav" onclick="openNav()">&#9776;</span>
+  </header>
+  
+  <section class="individual">
+  <!-- section with h1, title about the product-->
+    <section class="header hCenter">
+      <h1> Hair Tools </h1>
+    </section>
+    <aside class="twocolumn AsideLeft">
+      <div> 
+         <figure class="mobileImg"> 
+          <img src="image/widetooth.jpg" alt="Morries Motley Wide Tooth Comb">
+        </figure>
+      </div>
+    </aside>
+    <aside class="twocolumn AsideRight">
+      <div> 
+          <h1 class="ProductName">MORRIES MOTLEY WIDE TOOTH COMB</h1>
+          <p>SGD$ 20</p>
+          <h1 class="Quick">Quick Facts</h1>
+          <h2>&bull; Wide-toothed carbon coated bristles for increased definition and texture</h2>
+          <h2>&bull; Suitable for thicker, mid-length to long hair</h2>
+          <h2>&bull; Great for curly hair or thick hair during pre-styling</h2>
+      </div>
+      <div>
+      	 QTY<input type="number" min="1" max="10" name="quantity" class="qty" value="1">
+            <input type="button" value="Buy Now" onClick="location.href='ContactUs.html'">
+       </div>
+    </aside>
+  </section>
+  		
+  <section class="individual articleUp">
+  		 <article>
+ 	    <h1>Details</h1>
+  	    <p>If you have thick, curly, or unmanageable hair, use the Morris Motley Wide Tooth Comb to keep it under control. The wide teeth helps comb even the thickest hair without causing a lot of tugging, while being able to reach right to the roots of your hair and comb it from there. </p>
+         <p>While great for pre-styling, it can also be used after styling to give your hair a natural, effortless look.</p>
+  </article>
+  </section>
+  <!--footer-->
+  <footer class="footer">
+    <aside>
+      <div class="MoveCenter">
+      <h1>About Us</h1>
+      <p>Founded in 2016. HairStop is a small group of polytechnic students with the aim of providing a variety of hair products to the everyday man, giving them tips to style their hair with hopes of making them a better version of themselves.</p>
+      </div>
+    </aside>
+    <aside>
+      <div class="MoveLeft">
+      <h1>Links</h1>
+		  <ul class="FooterMenu">
+			  <li><a title="About Us" href="AboutUs.html">About Us</a></li>
+			  <li><a title="Contact Us" href="ContactUs.html">Contact Us</a></li>
+			  <li><a title="FAQ" href="FAQ.html">FAQ</a></li>
+		  </ul>
+      </div>
+    </aside>
+  </footer>
+  <footer class="SubFooter">
+    <div>
+  	   <p>
+  		 <img src="image/Paypal-icon.png" alt="paypal">
+  		 <img src="image/Visa-icon.png" alt="visa">
+  		 <img src="image/Master-Card-icon.png" alt="mastercard">
+  	   </p>
+    </div>
+    <div class="CopyRight">
+    	<p>&copy; HairStop | All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</div>
+</body>
+</html>

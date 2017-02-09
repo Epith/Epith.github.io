@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<!-- this is the head where the link to the css and favicon is written and the title of the website. also the viewport is written-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial scale=1">
+	<title>Lockhart</title>
+	<link rel="icon" href="image/favicon.png">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> 
+    <script src="js/fotorama.js"></script>
+    <script src="js/mobileNav.js"></script>
+</head>
+<!-- start of body-->
+<body>
+
+<div class="page">
+  <header> 
+  <!-- header with logo and message and the logo is a hyperlink-->
+   <nav>
+  <!-- nav bar with sub-nav bar-->
+    <ul class="center">
+      <li class="BiggerHeight"> <a title="Home" href="index.html">Home</a> </li>
+      <li class="dropdown BiggerHeight"> <a title="Products" href="Products.html" class="dropbtn">Products</a>
+        <div class="dropdown-content">
+          <ul class="HeightFix">
+            <li> <a title="Hair Waxes & Clays" href="HairWaxes.html">Hair Waxes & Clays</a> </li>
+            <li> <a title="Hair Tools" href="HairTools.html">Hair Tools</a> </li>
+            <li> <a title="Hair Sprays" href="HairSprays.html">Hair Sprays</a> </li>
+          </ul>
+        </div>
+      </li>
+      <a title="HairStop" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+      <li class="FloatRight BiggerHeight"> <a title="About Us" href="AboutUs.html">About Us</a> </li>
+      <li class="BiggerHeight"> <a title="Contact Us" href="ContactUs.html">Contact Us</a> </li>
+    </ul>
+  </nav>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="HairWaxes.html" class="indent">Hair Waxes and Clays</a>
+  <a href="HairTools.html" class="leftindent">Hair Tools</a>
+  <a href="HairWaxes.html" class="indent">Hair Waxes and Clays</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="ContactUs.html">Contact Us</a>
+</div>
+ <span class="MobileNav" onclick="openNav()">&#9776;</span>
+  </header>
+  
+  <section class="individual">
+  <!-- section with h1, title about the product-->
+    <section class="header hCenter">
+      <h1> Hair Waxes & Clays </h1>
+    </section>
+    <aside class="twocolumn AsideLeft">
+      <div class="fotorama" data-nav="thumbs">
+        <img src="image/LockHart1.jpg" alt="Lockhart1">
+        <img src="image/LockHart2.jpg" alt="Lockhart2">
+        <img src="image/Lockhart3.jpg" alt="Lockhart3">
+        <img src="image/Lockhart4.jpg" alt="Lockhart4">
+     </div>
+    </aside>
+    <aside class="twocolumn AsideRight">
+      <div> 
+          <h1 class="ProductName">LOCKHART'S MATTE CLAY</h1>
+          <p>SGD$ 27</p>
+          <img src="image/LockHartBaro.jpg">
+      </div>
+      <div>
+      	 QTY<input type="number" min="1" max="10" name="quantity" class="qty" value="1">
+            <input type="button" value="Buy Now" onClick="location.href='ContactUs.html'">
+       </div>
+    </aside>
+  </section>
+  		
+  <section class="individual articleUp">
+  		 <article>
+ 	    <h1>Details</h1>
+  	    <p>There are so many variations on Clay products on the market. Some suck up all of the moisture in your hair and leave you with an unhealthy dry look, others are far too greasy and tough to work with. Holds range from super heavy/high holding, gravity defying, to light and wispy. Lockhart's Professional Matte Clay finds a happy middle ground to these extremes. It's truly a Medium holding Matte Clay which allows your hair to move naturally while holding it's desired shape. The shine that's provided is a nice healthy matte finish. All it takes is a few small scoops of product to provide a nice textured hairstyle that's perfect for a night on the town.</p>
+          <p><h4>Directions: </h4>Apply a small amount of Matte Clay to blow dired hair, applying from back to front. Brush product through hair from front to back to ensure even coverage. Style Hair accordingly using brush or fingers.</p>
+  </article>
+  </section>
+  <!--footer-->
+  <footer class="footer">
+    <aside>
+      <div class="MoveCenter">
+      <h1>About Us</h1>
+      <p>Founded in 2016. HairStop is a small group of polytechnic students with the aim of providing a variety of hair products to the everyday man, giving them tips to style their hair with hopes of making them a better version of themselves.</p>
+      </div>
+    </aside>
+    <aside>
+      <div class="MoveLeft">
+      <h1>Links</h1>
+		  <ul class="FooterMenu">
+			  <li><a title="About Us" href="AboutUs.html">About Us</a></li>
+			  <li><a title="Contact Us" href="ContactUs.html">Contact Us</a></li>
+			  <li><a title="FAQ" href="FAQ.html">FAQ</a></li>
+		  </ul>
+      </div>
+    </aside>
+  </footer>
+  <footer class="SubFooter">
+    <div>
+  	   <p>
+  		 <img src="image/Paypal-icon.png" alt="paypal">
+  		 <img src="image/Visa-icon.png" alt="visa">
+  		 <img src="image/Master-Card-icon.png" alt="mastercard">
+  	   </p>
+    </div>
+    <div class="CopyRight">
+    	<p>&copy; HairStop | All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</div>
+</body>
+</html>

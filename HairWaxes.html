@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<!-- this is the head where the link to the css and favicon is written and the title of the website. also the viewport is written-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<title>HairWaxes & Clays</title>
+	<link rel="icon" href="image/favicon.png">
+	<script src="js/mobileNav.js"></script>
+</head>
+<!-- start of body-->
+<body>
+
+<div class="page">
+  <header> 
+  <!-- header with logo and message and the logo is a hyperlink-->
+   <nav>
+  <!-- nav bar with sub-nav bar-->
+    <ul class="center">
+      <li class="BiggerHeight"> <a title="Home" href="index.html">Home</a> </li>
+      <li class="dropdown BiggerHeight"> <a title="Products" href="Products.html" class="dropbtn">Products</a>
+        <div class="dropdown-content">
+          <ul class="HeightFix">
+            <li> <a title="Hair Waxes & Clays" href="HairWaxes.html">Hair Waxes & Clays</a> </li>
+            <li> <a title="Hair Tools" href="HairTools.html">Hair Tools</a> </li>
+            <li> <a title="Hair Sprays" href="HairSprays.html">Hair Sprays</a> </li>
+          </ul>
+        </div>
+      </li>
+      <a title="HairStop" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+      <li class="FloatRight BiggerHeight"> <a title="About Us" href="AboutUs.html">About Us</a> </li>
+      <li class="BiggerHeight"> <a title="Contact Us" href="ContactUs.html">Contact Us</a> </li>
+    </ul>
+  </nav>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="HairWaxes.html" class="indent">Hair Waxes and Clays</a>
+  <a href="HairTools.html" class="leftindent">Hair Tools</a>
+  <a href="HairWaxes.html" class="indent">Hair Waxes and Clays</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="ContactUs.html">Contact Us</a>
+</div>
+ <span class="MobileNav" onclick="openNav()">&#9776;</span>
+  </header>
+  
+  <section class="FirstRow">
+    <!-- section about hairwaxes and clays with image,name of product and price-->
+    <section class="header">
+      <h1> Hair Waxes & Clays </h1>
+    </section>
+    <aside class="threecolumn LowFix">
+      <div> 
+        <a href="BluMaan.html" title="Original By BluMaan">
+        <figure class="hvr-float-shadow"> 
+          <img src="image/BluMaan200.jpg" alt="Original by BluMaan">
+          <figcaption>Original by BluMaan <br/> SGD$32</figcaption>
+        </figure>
+        </a> 
+      </div>
+    </aside>
+    <aside class="threecolumn LowFix">
+      <div> 
+        <a href="DynamiteClay.html" title="By Vilain Dynamite Clay">
+        <figure class="hvr-float-shadow"> 
+          <img src="image/DynamiteClay200.jpg" alt="ByVilain Dynamite Clay">
+          <figcaption>By Vilain Dynamite Clay <br/> SGD$29</figcaption>
+        </figure>
+        </a> 
+      </div>
+    </aside>
+    <aside class="threecolumn LowFix">
+      <div> 
+        <a href="Lockhart.html" title="Lockhart's Matte Clay">
+        <figure class="hvr-float-shadow"> 
+          <img src="image/Lockhart200.jpg" alt="Lockhart's Matte Clay">
+          <figcaption>Lockhart's Matte Clay <br/> SGD$27</figcaption>
+        </figure>
+        </a> 
+      </div>
+    </aside>
+  </section>
+  <!--footer-->
+ <footer class="footer">
+    <aside>
+      <div class="MoveCenter">
+      <h1>About Us</h1>
+      <p>Founded in 2016. HairStop is a small group of polytechnic students with the aim of providing a variety of hair products to the everyday man, giving them tips to style their hair with hopes of making them a better version of themselves.</p>
+      </div>
+    </aside>
+    <aside>
+      <div class="MoveLeft">
+      <h1>Links</h1>
+		  <ul class="FooterMenu">
+			  <li><a title="About Us" href="AboutUs.html">About Us</a></li>
+			  <li><a title="Contact Us" href="ContactUs.html">Contact Us</a></li>
+			  <li><a title="FAQ" href="FAQ.html">FAQ</a></li>
+		  </ul>
+      </div>
+    </aside>
+  </footer>
+  <footer class="SubFooter">
+    <div>
+  	   <p>
+  		 <img src="image/Paypal-icon.png" alt="paypal">
+  		 <img src="image/Visa-icon.png" alt="visa">
+  		 <img src="image/Master-Card-icon.png" alt="mastercard">
+  	   </p>
+    </div>
+    <div class="CopyRight">
+    	<p>&copy; HairStop | All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</div>
+</body>
+</html>
